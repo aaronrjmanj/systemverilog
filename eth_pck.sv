@@ -1,7 +1,7 @@
 class eth_pkt; // definition
  // property declaration
  rand bit [55:0] preamble;
- bit [7:0] sof;
+	bit [7:0] sof; // without the rand keyord randmize function wont take values
  rand bit [47:0] mac_d;
  rand bit[47:0] mac_s;
  rand bit [15:0] length;
