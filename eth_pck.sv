@@ -31,8 +31,9 @@ module top;
 eth_pkt m; //creating handle
 
 initial begin
- m=new[]; // allocating memory
- m.randomize();
+ 	m=new(); // allocating memory
+ 	m.randomize();
+	m.print();
 end
 endmodule
 
